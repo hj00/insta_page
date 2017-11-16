@@ -1,0 +1,9 @@
+<h1>New Posting</h1>
+
+<%= form_tag(posts_path, method: "post") do %>
+    <%= label_tag(:image_url, "Image : ") %>
+    <%= text_field_tag(:image_url) %><br/>
+    <%= label_tag(:story, "Story") %><br/>
+    <%= text_area_tag(:story) %><br/>
+    <%= submit_tag("POSTING")%>
+<% end %>

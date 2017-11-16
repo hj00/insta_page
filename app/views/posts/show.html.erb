@@ -1,0 +1,6 @@
+<h1>Insta</h1>
+<p><img src="<%= @post.image_url %>" height="200" width="200"></p>
+<p><%= @post.story %></p>
+<%= link_to("Home", root_path)%>
+<%= link_to("EDIT", edit_post_path(@post.id))%>
+<%= link_to("DELETE", post_path(@post.id), method: "delete") %>

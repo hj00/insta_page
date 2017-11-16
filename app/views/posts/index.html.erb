@@ -1,0 +1,7 @@
+<h1>Real-Insta</h1>
+<% @posts.each do |p| %>
+<p><%= link_to("#{p.id}th post", post_path(p.id)) %></p>
+<img src="<%= p.image_url%>" height="50", width="50">
+<hr/>
+<% end %>
+<%= link_to("Posting", new_post_path) %>
